@@ -5,3 +5,24 @@ security:
   user:
     name: admin
     password: admin
+server:
+  port: 8761
+
+# eureka服务中心配置
+eureka:
+  datacenter: SpringCloud
+  environment: test
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    enabled: true #健康检查
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+  instance:
+
+
+# 配置 eureka 首页的路径
+  dashboard:
+    enabled: true # 如果这里配置为 false 的话，那么 Eureka 的首页将无法访问
+#    path: / # 默认配置是 / ，但是这里配置成 /x 的话，那么访问的首页路径为: http://localhost:8761/x
+

@@ -1,0 +1,31 @@
+server:
+  port: 8082
+# jpa配置 数据源配置
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+  application:
+    name: scloud-user-server
+#日志配置
+logging:
+  level: info
+  org.hibernate: INFO
+  org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  org.bibernate.type.descriptor.sql.BasicExtractor: TRACE
+  com.springms: DEBUG
+#eureka配置
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://admin:admin@localhost:8761/eureka
+
+
+
