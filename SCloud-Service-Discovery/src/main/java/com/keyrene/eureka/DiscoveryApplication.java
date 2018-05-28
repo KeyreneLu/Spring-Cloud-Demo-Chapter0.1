@@ -10,5 +10,6 @@ public class DiscoveryApplication {
 
     public static void main(String[] args){
         SpringApplication.run(DiscoveryApplication.class,args);
+        System.out.println("【【【【【【 Eureka微服务 】】】】】】已启动.");
     }
 }

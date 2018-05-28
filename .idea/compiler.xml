@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SCloud-Movie-Server" />
+        <module name="SCloud-Movie-Server-Ribbon" />
         <module name="SCloud-Service-Discovery" />
         <module name="SCloud-User-Server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SCloud-Movie-Server" target="1.6" />
+      <module name="SCloud-Movie-Server-Ribbon" target="1.6" />
       <module name="SCloud-Server-Discovery" target="1.6" />
       <module name="SCloud-Service-Discovery" target="1.6" />
       <module name="Scloud-Service-Discovery" target="1.7" />

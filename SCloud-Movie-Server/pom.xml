@@ -10,21 +10,27 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>scloud-discovery</artifactId>
+    <artifactId>scloud-movie-server</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
+        <!-- web模块 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <!-- 客户端发现模块 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
-        <!-- spring 安全架包 -->
+
+        <!-- 监控和管理生产环境的模块 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
-
 </project>

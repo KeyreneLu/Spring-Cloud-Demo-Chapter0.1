@@ -11,6 +11,8 @@
     <modules>
         <module>SCloud-Service-Discovery</module>
         <module>SCloud-User-Server</module>
+        <module>SCloud-Movie-Server</module>
+        <module>SCloud-Movie-Server-Ribbon</module>
     </modules>
 
     <parent>
@@ -37,11 +39,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <!-- springcloud服务发现 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
+        <!--&lt;!&ndash; springcloud服务发现 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-eureka</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>
