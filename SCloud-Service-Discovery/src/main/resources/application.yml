@@ -13,8 +13,8 @@ eureka:
   datacenter: SpringCloud
   environment: test
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: false #false表示不向注册中心注册自己
+    fetch-registry: false #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     enabled: true #健康检查
     service-url:
       defaultZone: http://admin:admin@localhost:8761/eureka
