@@ -13,6 +13,7 @@
         <module>SCloud-User-Server</module>
         <module>SCloud-Movie-Server</module>
         <module>SCloud-Movie-Server-Ribbon</module>
+        <module>SCloud-Movie-Server-Ribbon-Custom</module>
     </modules>
 
     <parent>

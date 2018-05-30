@@ -1,9 +1,8 @@
 server:
-  port: 8084
-#做微服务的时候，该名称很重要，供其他服务访问用
+  port: 8085
 spring:
   application:
-    name: scloud-movie-server-ribbon
+    name: scloud-custom-ribbo-server
 eureka:
   client:
     healthcheck:
@@ -13,7 +12,3 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
-#做负载均衡的时候，不需要配置这个地址
-#user:
-#  userServicePath: http://localhost:8082
-

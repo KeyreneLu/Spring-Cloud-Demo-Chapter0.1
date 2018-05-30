@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SCloud-Movie-Server/SCloud-Movie-Server.iml" filepath="$PROJECT_DIR$/SCloud-Movie-Server/SCloud-Movie-Server.iml" />
       <module fileurl="file://$PROJECT_DIR$/SCloud-Movie-Server-Ribbon/SCloud-Movie-Server-Ribbon.iml" filepath="$PROJECT_DIR$/SCloud-Movie-Server-Ribbon/SCloud-Movie-Server-Ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SCloud-Movie-Server-Ribbon-Custom/SCloud-Movie-Server-Ribbon-Custom.iml" filepath="$PROJECT_DIR$/SCloud-Movie-Server-Ribbon-Custom/SCloud-Movie-Server-Ribbon-Custom.iml" />
       <module fileurl="file://$PROJECT_DIR$/SCloud-Service-Discovery/SCloud-Service-Discovery.iml" filepath="$PROJECT_DIR$/SCloud-Service-Discovery/SCloud-Service-Discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/SCloud-User-Server/SCloud-User-Server.iml" filepath="$PROJECT_DIR$/SCloud-User-Server/SCloud-User-Server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-Cloud-Demo-Chapter0.1.iml" filepath="$PROJECT_DIR$/Spring-Cloud-Demo-Chapter0.1.iml" />
