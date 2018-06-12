@@ -1,6 +1,6 @@
 package com.ribbon.custom;
 
-import com.ribbon.custom.config.TestConfigurationInsideScanPackage;
+import com.ribbon.custom.config.TestConfigurationOutsideScanPackage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-@RibbonClient(name = "scloud-user-server",configuration = TestConfigurationInsideScanPackage.class)
+@RibbonClient(name = "scloud-user-server",configuration = TestConfigurationOutsideScanPackage.class)
 @ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION,value = ExcludeFromComponentScan.class)})
 public class RibboCustomApplication {
 
