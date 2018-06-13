@@ -1,0 +1,16 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: scloud-movie-server-hystrix
+user:
+  userServicePath: http://scloud-user-server
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true

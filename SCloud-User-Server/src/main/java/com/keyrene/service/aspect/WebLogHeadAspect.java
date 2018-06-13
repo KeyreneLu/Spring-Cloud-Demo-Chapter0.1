@@ -21,7 +21,7 @@ public class WebLogHeadAspect {
 
     private Logger logger = Logger.getLogger(getClass());
 
-    ThreadLocal<Long> startTime = new ThreadLocal<Long>();
+    private ThreadLocal<Long> startTime = new ThreadLocal<Long>();
 
     private static final String PRE_TAG = "SpringCloud---";
 

@@ -14,6 +14,7 @@
         <module>SCloud-Movie-Server</module>
         <module>SCloud-Movie-Server-Ribbon</module>
         <module>SCloud-Movie-Server-Ribbon-Custom</module>
+        <module>SCloud-Movie-Server-Hystrix</module>
     </modules>
 
     <parent>
