@@ -14,3 +14,16 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
     prefer-ip-address: true
+
+# 这里就介绍大概三种方式来解决超时的问题，解决方案如下：
+#
+# 第一种方式：将 hystrix 的超时时间设置成 5000 毫秒
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
+#
+# 或者：
+# 第二种方式：将 hystrix 的超时时间直接禁用掉，这样就没有超时的一说了，因为永远也不会超时了
+# hystrix.command.default.execution.timeout.enabled: false
+#
+# 或者：
+# 第三种方式：索性禁用feign的hystrix支持
+# feign.hystrix.enabled: false ## 索性禁用feign的hystrix支持

@@ -1,0 +1,22 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: scloud-zuul-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true
+
+
+zuul:
+#  prefix:  访问路径前缀，没有则不能访问
+  ignored-services: scloud-user-server #忽略掉原真实服务的名字 "*"星号忽略所有的真实服务名字
+  routes: #真实路径映射
+    myuser.serviceId: scloud-user-server
+    myuser.path: /user/**
+

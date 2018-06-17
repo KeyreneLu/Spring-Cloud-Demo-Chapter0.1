@@ -1,0 +1,12 @@
+server:
+  port: 8090
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka
+spring:
+  application:
+    name: scloud-movie-server-feign
+
+

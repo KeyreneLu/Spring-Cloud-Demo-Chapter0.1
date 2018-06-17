@@ -15,6 +15,9 @@
         <module>SCloud-Movie-Server-Ribbon</module>
         <module>SCloud-Movie-Server-Ribbon-Custom</module>
         <module>SCloud-Movie-Server-Hystrix</module>
+        <module>SCloud-Movie-Server-Api</module>
+        <module>SCloud-Movie-Server-Feign</module>
+        <module>SCloud-Movie-Server-Zuul</module>
     </modules>
 
     <parent>

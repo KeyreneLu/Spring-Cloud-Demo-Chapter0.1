@@ -14,6 +14,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+        <dependency>
+            <groupId>com.keyrene</groupId>
+            <artifactId>scloud-movie-server-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!-- web模块 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
